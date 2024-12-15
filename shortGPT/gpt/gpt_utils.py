@@ -10,7 +10,7 @@ import yaml
 from shortGPT.config.api_db import ApiKeyManager
 
 
-def num_tokens_from_messages(texts, model="gpt-3.5-turbo-0301"):
+def num_tokens_from_messages(texts, model="gpt-4o-mini"):
     """Returns the number of tokens used by a list of messages."""
     try:
         encoding = tiktoken.encoding_for_model(model)
